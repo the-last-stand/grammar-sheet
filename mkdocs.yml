@@ -1,0 +1,46 @@
+site_name: Grammar Sheet
+site_url: https://the-last-stand.github.io/grammar-sheet/
+repo_name: grammar-sheet
+repo_url: https://github.com/the-last-stand/grammar-sheet
+site_description: ""
+site_author: None
+copyright: 'Copyright &copy; 2022 None'
+remote_branch: gh-pages
+edit_uri: edit/main/docs/
+
+theme:
+  language: zh
+  name: 'material'
+  palette:
+    - scheme: default
+      primary: 'deep orange'
+      accent: 'pink'
+      toggle:
+        icon: material/brightness-4
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+  features:
+#    - navigation.tabs
+
+#extra_css:
+#  - 'css/app.css'
+
+markdown_extensions:
+  - codehilite:
+      guess_lang: false
+
+plugins:
+  - search
+  - git-revision-date
+#  - macros
+
+extra:
+  versions:
+    botfather: '0.0.1'
+
+nav:
+  - 'Home':
+      - 'Overview': index.md
